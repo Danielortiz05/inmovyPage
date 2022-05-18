@@ -194,6 +194,8 @@ p{
 .servicios_section{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 1000px;
     
 }
@@ -207,15 +209,13 @@ p{
 
 .texto_servicios_section h1{
     font-size: 40px;
-    margin-bottom: 28px;
+    margin-bottom: 12px;
 }
 
 .texto_servicios_section p{
-    width: 60%;
-    font-size: 14px;
+    font-size: 18px;
     line-height: 28px;
     font-weight: 500;
-    text-align: center;
 }
 
 .imagenes_servicios_section{
@@ -236,6 +236,7 @@ p{
     align-items: center;
     flex-direction: column; 
     opacity: 0.9;
+    border-radius: 40px;
 }
 
 .img2{
@@ -250,6 +251,7 @@ p{
     align-items: center;
     flex-direction: column; 
     opacity: 0.9;
+    border-radius: 40px;
 }
 
 .img3{
@@ -264,6 +266,7 @@ p{
     align-items: center;
     flex-direction: column; 
     opacity: 0.9;
+    border-radius: 40px;
 }
 .img1 h2, .img2 h2, .img3 h2{
     font-size: 28px;
@@ -276,9 +279,13 @@ p{
     color: white;
     border-radius: 48px;
     border-style: none; 
-    width: 100px;
+    width: 120px;
     height: 44px;
-    opacity: 0.8;
+    opacity: 0.9;
+    position: relative;
+    top: 100px;
+    left: 110px;
+    
 }
 .img1 button:hover,
 .img2 button:hover,
@@ -286,6 +293,22 @@ p{
     transition: 0.6s;
     cursor: pointer;
     box-shadow: 0px 1px 1px 0px whitesmoke;
+}
+
+.servicios_section_button{
+    background-color: var(--second-color);
+    color: white;
+    border-radius: 48px;
+    border-style: none; 
+    width: 180px;
+    height: 40px;
+    opacity: 0.8;
+    margin-top: 32px;
+}
+.servicios_section_button:hover{
+    transition: 0.6s;
+    cursor: pointer;
+    box-shadow: 0px 1px 1px 0px black;
 }
 
 .portafolios{
