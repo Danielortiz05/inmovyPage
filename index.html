@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./logo/nav_logo.png">
     <title>Inmovy</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
@@ -22,16 +23,16 @@
         </figure>
 
         <nav class="barra_navegacion">
-                <li><a href="">Inicio</a> </li>
-                <li><a href="">Acerca de</a></li>
-                <li><a href="">Metodología</a></li>
-                <li><a href="">Contacto</a></li>
-            
+                <li><a href="./index.html">Inicio</a> </li>
+                <li><a href=#seccion_quienes_somos>Quiénes somos</a></li>
+                <li><a href=#seccion_tu_proyecto>Metodología</a></li>
+                <li><a href=#seccion_servicios>Proyectos</a></li>
+                <li><a href=#seccion_contacto>Contacto</a></li>
         </nav>
 
     </header>
 
-    <section class="principal">
+    <section id="seccion_principal" class="principal">
         <article class="inicio">
             <h1 class="titulo_inicio">Vendemos tu proyecto<br/> en tiempo record y sin <br/> publicidad tradicional</h1>
             <p class="subtitulo">Somos el aliado en ventas para tu proyecto inmobiliario</p>
@@ -43,7 +44,7 @@
         </figure>
     </section>
 
-    <section class="segundo">
+    <section id="seccion_quienes_somos" class="segundo">
         <figure class="imagen2">
             <img class="imagen_2" src="./imagenesprovisionales/Quienes somos.png" alt="logo"> <!-- Anexar imagen 2   -->
         </figure>   
@@ -56,7 +57,7 @@
         </article>     
     </section>
 
-    <section class="tu_proyecto">
+    <section id="seccion_tu_proyecto"class="tu_proyecto">
 
         <article class="tu_proyecto_section">
 
@@ -64,18 +65,22 @@
 
             <ul class="lista_items">
                 <li class="item1">
+                    <img src="./imagenesprovisionales/otorgar.png" alt="imagen sobre ahorro de dinero">
                     <h2 >AHORRO DE <br/> DINERO</h2>
                     <p>Vendemos sin sala de<br/> ventas y bajamos el CAC<br/> de tu proyecto</p>
                 </li>
                 <li class="item2">
+                    <img src="./imagenesprovisionales/el-tiempo-es-dinero.png" alt="imagen sobre aceleración de ventas">
                     <h2>ACELERAMOS LAS <br/> VENTAS</h2>
                     <p>Vendemos en tiempo<br/> record tu proyecto<br/> inmobiliario</p>
                 </li>
                 <li class="item3">
+                    <img src="./imagenesprovisionales/confianza (1).png" alt="Imagen sobre la confianza con el cliente">
                     <h2>FIDELIZACIÓN DEL <br/> CLIENTE</h2>
                     <p>Creamos una comunidad<br/> para tu empresa<br/> inmobiliaria</p>
                 </li>
                 <li class="item4">
+                    <img src="./imagenesprovisionales/clasificacion (1).png" alt="Imagen sobre el exito del proyecto">
                     <h2>ÉXITO DEL <br/> PROYECTO</h2>
                     <p>Logramos cumplir los<br/> objetivos de nuestro cliente</p>
                 </li>
@@ -89,7 +94,7 @@
         
     </section>
 
-    <section class="servicios_section">
+    <section id="seccion_servicios" class="servicios_section">
         <article class="texto_servicios_section">
             <h1>Proyectos en venta</h1>
             <p>Compra la casa de tus sueños con Inmovy</p>
@@ -119,7 +124,7 @@
 
     </section>
 
-    <section class="portafolios">
+    <section id="seccion_portafolio" class="portafolios">
         <span class="titulo_portafolios">
             <h1>No pierdas más tiempo y dinero</h1>
         </span>
@@ -139,7 +144,7 @@
         </section>
     </section>
 
-    <section class="seccion_contacto">
+    <section id="seccion_contacto" class="seccion_contacto">
         <article class="informacion_contacto">
             <h1>Contacto</h1>
             <p>Quiero vender mi proyecto inmobiliario con Inmovy</p>
@@ -147,10 +152,38 @@
             <p>315 622 85 51</p>
         </article>
 
-        <article class="formulario_contacto">
-
+        <article >
+            <form class="formulario_contacto" action="">
+                <label for="name">
+                    <span>Nombre*</span>
+                    <input type="text" id="name" placeholder="Ingresa tu nombre" name="name" autocomplete="name" required>
+                </label>
+                <label for="email">
+                    <span>Email*</span>
+                    <input type="email" id="email" placeholder="Ingresa tu email" name="email" autocomplete="email" required>
+                </label>
+                <label for="phone">
+                    <span>Teléfono*</span>
+                    <input type="text" id="phone" placeholder="Introduce tu número de teléfono" name="phone" autocomplete="mobile" required>
+                </label>
+                <label for="menssage">
+                    <span>Mensaje*</span>
+                    <textarea class="textarea" id="menssage" placeholder="Escribe tu mensaje aquí..." name="menssage" required></textarea>
+                </label>
+                <input class="button_submit" type="submit" value="Enviar">
+            </form>
         </article>
     </section>
+    <footer class="footer_section">
+        <h1>Inmovy</h1>
+        <section>
+            <a href="https://www.facebook.com/profile.php?id=100066621596292"><img src="https://static.wixstatic.com/media/0fdef751204647a3bbd7eaa2827ed4f9.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Facebook.png" alt="logo de facebook"></a>
+            <a href="https://www.instagram.com/inmovy/"><img src="https://static.wixstatic.com/media/01c3aff52f2a4dffa526d7a9843d46ea.png/v1/fill/w_25,h_25,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Instagram.png" alt="logo de instagram"></a>
+            <a class="logo_whatsapp" href="http://wa.link/vxkx3p"><img src="./logo/whatsapp.png" alt="Logo de whatsapp"></a>
+            <a class="logo_correo" href="inmovybog@gmail.com"><img src="./logo/correo.png" alt="Logo de correo electronico"></a>
+        </section>
+        <p>©2022 por Inmovy</p>
+    </footer>
 
 </body>
 </html>
