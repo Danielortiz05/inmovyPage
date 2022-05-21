@@ -1,0 +1,250 @@
+*{  
+    box-sizing: border-box;
+}
+:root{
+    --main-color: #496687; /* Titulos */
+    --second-color: #258563; /* Texto */
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: line;
+    justify-content: space-between;
+    background-color: #fbfbfb;
+    position: fixed;
+    width: 100%;
+    z-index: 1100;
+}
+
+.contenedor_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 114px;
+    margin-top: 28px;
+}
+
+.logo_img{
+    width: 50px;
+    height: 60px;
+}
+
+.barra_navegacion{
+    display: flex;
+    margin-top: 60px;
+    margin-right: 40px;
+
+}
+
+.barra_navegacion > li  {
+    list-style: none;
+    margin-right:20px;
+}
+.barra_navegacion > li a{
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: var(--sm);
+    font-weight: bold;
+} 
+.barra_navegacion > li a:hover{
+    color: black;
+    zoom: 105%;
+    cursor: pointer;
+}
+
+h1, h2{
+    color: var(--second-color);
+}
+p{
+    color: var(--main-color);
+    font-weight:bold ;
+}
+
+.proyecto{
+    padding-top: 160px;
+    margin-left: 56px;
+    margin-right: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
+}
+
+.proyecto_informacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 120px;
+}
+
+.proyecto_informacion h1{
+    margin: 0;
+    font-size: 40px;
+    color: black;
+}
+
+.proyecto_informacion h2,
+.imagenes_proyecto p,
+.info_usuario p,
+.info_usuario span{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+}
+
+.imagenes_proyecto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+
+}
+
+.info_usuario{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.info_usuario p{
+    margin-bottom: 32px;
+}
+
+.info_usuario label{
+    display: flex;
+    flex-direction: column;
+}
+
+.input_info{
+    height: 30px;
+    border: 1px solid grey;
+    border-radius: 12px;
+}
+
+.input_info::placeholder{
+    padding-left: 8px;
+    
+}
+
+.input_info:focus{
+    padding-left: 8px;
+}
+.proyecto_info_button{
+    margin-top: 20px;
+    background-color: var(--second-color);
+    color: white;
+    border-radius: 48px;
+    border-style: none; 
+    width: 100px;
+    height: 36px;
+    opacity: 0.9;
+}
+
+.proyecto_info_button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 0 1px grey;
+}
+.imagen_principal{
+    margin: 0;
+    display: flex;
+    margin-left: 40px;
+}
+.imagen_principal img{
+    width: 450px;
+    height: 430px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.imagenes_columna{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    justify-content: space-around;
+}
+
+.imagenes_columna img{
+    width: 350px;
+    height: 114px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.proyecto_botones{
+    width: 100%;
+    margin-top: 80px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;  
+    align-items: center;
+}
+
+.proyecto_botones input{
+    margin-top: 20px;
+    margin-left: 104px;
+    background-color: var(--second-color);
+    color: white;
+    border-radius: 48px;
+    border-style: none; 
+    width: 148px;
+    height: 44px;
+    opacity: 0.9;
+}
+
+.proyecto_botones input:hover{
+    cursor: pointer;
+    box-shadow: 0 0 0 1px grey;
+}
+
+.footer_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    align-items: center;
+}
+
+.footer_section h1{
+    font-size: 20px;
+    color: var(--main-color);
+}
+
+.footer_section p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--main-color);
+}
+
+.footer_section section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.footer_section section a{
+    margin-right: 8px;
+}
+.logo_whatsapp img{
+    margin-left: 4px;
+    width: 21px;
+    height: 21px;
+    object-fit: cover;
+}
+
+.logo_correo img{
+    margin-left: 4px;
+    width: 22px;
+    height: 16px;
+    object-fit: cover;
+}

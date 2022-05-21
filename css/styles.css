@@ -287,7 +287,7 @@ p{
     color: whitesmoke;
 }
 
-.img1 button, .img2 button, .img3 button{
+.proyecto_boton{
     background-color: var(--second-color);
     color: white;
     border-radius: 48px;
@@ -298,11 +298,9 @@ p{
     position: relative;
     top: 100px;
     left: 110px;
-    
 }
-.img1 button:hover,
-.img2 button:hover,
-.img3 button:hover{
+
+.proyecto_boton:hover{
     transition: 0.6s;
     cursor: pointer;
     box-shadow: 0px 1px 1px 0px whitesmoke;
@@ -682,7 +680,6 @@ p{
     position: absolute;
     top: 50%;
     -webkit-transform: translate(0, -50%);
-    cursor: pointer;
     -ms-transform: translate(0, -50%);
     transform: translate(0, -50%);
     text-align: center;
