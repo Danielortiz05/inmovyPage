@@ -93,8 +93,7 @@ p{
 
 .proyecto_informacion h2,
 .imagenes_proyecto p,
-.info_usuario p,
-.info_usuario span{
+.titulo_sub_proyecto h3{
     margin: 0;
     font-size: 20px;
     font-weight: 400;
@@ -106,18 +105,30 @@ p{
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    margin-top: 40px;
+    margin-top: 28px;
 
 }
 
 .info_usuario{
-    margin-top: 40px;
+    margin-top: 28px;
     display: flex;
     flex-direction: column;
+    border: 1px solid rgb(229, 229, 229);
+    border-radius: 10px;
+    padding: 4px;
 }
 
 .info_usuario p{
+    color: black;
+    font-size: 16px;
     margin-bottom: 32px;
+    font-weight: 600;
+}
+.info_usuario span{
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
 }
 
 .info_usuario label{

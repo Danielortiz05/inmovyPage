@@ -96,11 +96,15 @@ p{
     width: 500px;
     height: 500px;
  }
+ .botones_compra_venta{
+    display:flex;
+    justify-content: space-between;
+ }
 
  .boton_venta{
     background-color: var(--second-color);
     color: white;
-    width: 200px;
+    width: 180px;
     height: 44px;
     border-radius: 48px;
     border-style: none; 
@@ -405,18 +409,20 @@ p{
     position: absolute;
     top: 156px;
 }
-.seccion_portafolio_1 button{
+.download_button input,
+.download_button a{
     background-color: var(--second-color);
     color: white;
     border-radius: 48px;
     border-style: none; 
-    width: 100px;
+    width: 120px;
     height: 44px;
     opacity: 0.9;
     position: absolute;
+    left: 262px;
     top: 296px;
 }
-.seccion_portafolio_1 button:hover{
+.download_button input:hover{
     transition: 0.6s;
     cursor: pointer;
     box-shadow: 0px 1px 1px 0px whitesmoke;
@@ -470,7 +476,7 @@ p{
     color: white;
     border-radius: 48px;
     border-style: none; 
-    width: 100px;
+    width: 120px;
     height: 44px;
     opacity: 0.9;
     position: absolute;
