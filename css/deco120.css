@@ -242,8 +242,6 @@ p{
     margin: 0;
     display: flex;
     flex-direction: column;
-    align-items: space-around;
-    justify-content: space-around;
 }
 
 .imagenes_columna img{
@@ -252,7 +250,6 @@ p{
     object-fit: cover;
     border-radius: 20px;
 }
-
 .proyecto_botones{
     width: 100%;
     margin-top: 80px;

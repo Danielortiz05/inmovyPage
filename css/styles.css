@@ -236,16 +236,12 @@ p{
 }
 
 .imagenes_servicios_section{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
     list-style: none;
 }
 
-.img1{
-    background-image: url("https://static.wixstatic.com/media/11062b_f16f404da81a4c65b25915cb334fe320~mv2.jpg/v1/fill/w_540,h_575,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/11062b_f16f404da81a4c65b25915cb334fe320~mv2.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+.img1 img{
+    object-fit: cover;
     width: 400px;
     height: 400px;
     display: flex;
@@ -256,11 +252,8 @@ p{
     border-radius: 40px;
 }
 
-.img2{
-    background-image: url("https://static.wixstatic.com/media/2578954972c24c89b6e611e9a20c3e42.jpg/v1/fill/w_543,h_575,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/2578954972c24c89b6e611e9a20c3e42.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
+.img2 img{
+    object-fit: cover;
     width: 400px;
     height: 400px;
     display: flex;
@@ -271,37 +264,17 @@ p{
     border-radius: 40px;
 }
 
-.img3{
-    background-image: url("https://static.wixstatic.com/media/bd236043d97c4c799bf0101fd2a50e10.jpg/v1/fill/w_543,h_575,fp_0.50_0.50,q_80,usm_0.66_1.00_0.01,enc_auto/bd236043d97c4c799bf0101fd2a50e10.jpg");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-    width: 400px;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column; 
-    opacity: 0.9;
-    border-radius: 40px;
-}
-.img1 h2, .img2 h2, .img3 h2{
-    font-size: 28px;
-    margin-bottom: 56px;
-    color: whitesmoke;
-}
 
 .proyecto_boton{
     background-color: var(--second-color);
     color: white;
     border-radius: 48px;
     border-style: none; 
-    width: 120px;
-    height: 44px;
+    width: 140px;
+    height: 40px;
     opacity: 0.9;
     position: relative;
-    top: 100px;
-    left: 110px;
+    left: 176px;
 }
 
 .proyecto_boton:hover{
@@ -318,7 +291,7 @@ p{
     width: 180px;
     height: 40px;
     opacity: 0.8;
-    margin-top: 32px;
+    margin-top: 48px;
 }
 .servicios_section_button:hover{
     transition: 0.6s;
