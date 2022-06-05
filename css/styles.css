@@ -98,7 +98,7 @@ p{
  }
  .botones_compra_venta{
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
  }
 
  .boton_venta{
@@ -250,6 +250,7 @@ p{
     flex-direction: column; 
     opacity: 0.9;
     border-radius: 40px;
+    position:relative;
 }
 
 .img2 img{
@@ -262,25 +263,37 @@ p{
     flex-direction: column; 
     opacity: 0.9;
     border-radius: 40px;
+    position:relative;
+    
 }
-
-
-.proyecto_boton{
-    background-color: var(--second-color);
-    color: white;
+.proyecto_boton_1{
+    color: #00ffa6;
     border-radius: 48px;
     border-style: none; 
     width: 140px;
     height: 40px;
-    opacity: 0.9;
-    position: relative;
-    left: 176px;
+    text-decoration: none;
+    position: absolute;
+    top: 2900px;
+    left: 976px;
 }
 
-.proyecto_boton:hover{
+
+.proyecto_boton{
+    color: #00ffa6;
+    border-radius: 48px;
+    border-style: none; 
+    width: 140px;
+    height: 40px;
+    text-decoration: none;
+    position: absolute;
+    top: 2900px;
+    left: 500px;
+}
+
+.proyecto_boton:hover, .proyecto_boton_1:hover{
     transition: 0.6s;
     cursor: pointer;
-    box-shadow: 0px 1px 1px 0px whitesmoke;
 }
 
 .servicios_section_button{
@@ -451,26 +464,32 @@ p{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    height: 700px;
-    background-color: rgb(59,121,128);
-    box-shadow: 0 0 0 8px rgba(90, 149, 154, 0.5),
-                0 4px 10px;
+    height: 1000px;
+    background-image: url(/paginaweb_inmovy/imagenesprovisionales/Sin\ título-16777_Mesa\ de\ trabajo\ 1.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    /* background-color: rgb(59,121,128); */
+    /* box-shadow: 0 0 0 8px rgba(90, 149, 154, 0.5), */
+                /* 0 4px 10px; */
 }
 
 .informacion_contacto{
-    margin-top: 80px;
+    margin-top: 260px;
     text-align: center;
 }
 
 .informacion_contacto h1{
+    margin: 0;
     font-size: 40px;
-    color: white;
+    color: black;
 }
 
 .informacion_contacto p{
+    margin-top: 4px;
     font-size: 16px;
     font-weight: 400;
-    color: white;
+    color: black;
 }
 
 .formulario_contacto{
@@ -483,7 +502,7 @@ p{
     display:flex;
     flex-direction: column;
     margin-bottom: 12px;
-    color: white;
+    color: black;
     font-size: 14px;
 }
 
@@ -491,9 +510,9 @@ p{
     margin: 8px 0;
     width: 470px;
     height: 52px;
-    color: white;
+    color: black;
     border-style: none;
-    border-bottom: 1px dotted white;
+    border-bottom: 1px dotted black;
     background-color: transparent;
 }
 .textarea:focus,
@@ -502,26 +521,26 @@ p{
 .formulario_contacto input:hover
 {
     outline: none;
-    border: 1px solid white;
+    border: 1px solid black;
 }
 
 .formulario_contacto input::placeholder{
-    color: white;
+    color: black;
     font-size: 16px;
 }
 
 .textarea{
-    color: white;
+    color: black;
     font-size: 16px;
     margin-top: 16px;
     border-style: none;
-    border-bottom: 1px dotted white;
+    border-bottom: 1px dotted black;
     background-color: transparent;
     height: 100px;
 }
 
 .textarea::placeholder{
-    color: white;
+    color: black;
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
     }
