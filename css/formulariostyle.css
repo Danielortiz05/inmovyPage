@@ -1,11 +1,30 @@
+*{  
+    box-sizing: border-box;
+}
+:root{
+    --main-color: #496687; /* Titulos */
+    --second-color: #258563; /* Texto */
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
 
-
+h1, h2{
+    color: var(--second-color);
+}
+p{
+    color: var(--main-color);
+    font-weight:bold ;
+}
 .contenedor{
     display: flex;
     flex-direction: line;
     justify-content: space-between;
     background-color: #fbfbfb;
-    position: fixed;
     width: 100%;
     z-index: 1100;
 }
@@ -50,11 +69,11 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 700px;
+    height: 1000px;
     width: 100%;
-    background-image: url(/paginaweb_inmovy/imagenesprovisionales/Sin\ título-16777_Mesa\ de\ trabajo\ 1.png);
+    background-image: url(/imagenesprovisionales/Sin\ título-16777_Mesa\ de\ trabajo\ 1.png);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     /* background-color: rgb(59,121,128); */
     /* box-shadow: 0 0 0 8px rgba(90, 149, 154, 0.5), */
@@ -132,7 +151,7 @@
 
 .formulario_contacto .button_submit{
     color: var(--main-color);
-    background-color: white;
+    background-color: transparent;
     border-radius: 20px;
     border-style: none; 
     width: 470px;
@@ -143,4 +162,46 @@
 .button_submit:hover {
     cursor: pointer;
     box-shadow: 0px 1px 1px 0px grey;
+}
+
+.footer_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    align-items: center;
+}
+
+.footer_section h1{
+    font-size: 20px;
+    color: var(--main-color);
+}
+
+.footer_section p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--main-color);
+}
+
+.footer_section section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.footer_section section a{
+    margin-right: 8px;
+}
+.logo_whatsapp img{
+    margin-left: 4px;
+    width: 21px;
+    height: 21px;
+    object-fit: cover;
+}
+
+.logo_correo img{
+    margin-left: 4px;
+    width: 22px;
+    height: 16px;
+    object-fit: cover;
 }

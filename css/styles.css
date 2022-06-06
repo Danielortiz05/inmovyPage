@@ -274,8 +274,9 @@ p{
     height: 40px;
     text-decoration: none;
     position: absolute;
-    top: 2900px;
-    left: 976px;
+    top: 1456px;
+    left: 970px;
+    z-index: 1000;
 }
 
 
@@ -287,8 +288,8 @@ p{
     height: 40px;
     text-decoration: none;
     position: absolute;
-    top: 2900px;
-    left: 500px;
+    top: 1456px;
+    left: 494px;
 }
 
 .proyecto_boton:hover, .proyecto_boton_1:hover{
@@ -465,7 +466,7 @@ p{
     flex-direction: row;
     justify-content: space-around;
     height: 1000px;
-    background-image: url(/paginaweb_inmovy/imagenesprovisionales/Sin\ título-16777_Mesa\ de\ trabajo\ 1.png);
+    background-image: url(/imagenesprovisionales/Sin\ título-16777_Mesa\ de\ trabajo\ 1.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -546,8 +547,8 @@ p{
     }
 
 .formulario_contacto .button_submit{
-    color: var(--main-color);
-    background-color: white;
+    color: black;
+    background-color: transparent;
     border-radius: 20px;
     border-style: none; 
     width: 470px;
