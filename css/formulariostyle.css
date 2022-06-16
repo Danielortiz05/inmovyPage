@@ -13,9 +13,6 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-h1, h2{
-    color: var(--second-color);
-}
 p{
     color: var(--main-color);
     font-weight:bold ;
@@ -64,13 +61,69 @@ p{
     zoom: 105%;
     cursor: pointer;
 }
+.container_form{
+    margin-top: 20px;
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.line_1{
+    height: 1px;
+    width: 600px;
+    border-color: white;
+    background-color: white;
+    margin-bottom: 32px;
+}
+
+.line_2{
+    height: 1px;
+    width: 800px;
+    border-color: white;
+    background-color: white;
+    margin-top: 40px;
+}
+
+.frase{
+    font-size: 28px;
+    color: black;
+    font-weight: 600px;  
+    text-align: center;
+}
+.frase h1{
+    margin:0;
+}
+.frase h2{
+    color: black;
+    margin-top: 0;
+    font-size: 26px;
+    font-weight: 400px;
+}
+.article-contacto{
+    display:flex;
+    align-items: space-around;
+    flex-direction: column;
+}
+
+.imagen_article img{
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 20px ;
+
+}
+.parrafo_form{
+    color: black;
+    text-align: center;
+    margin-bottom: 22px;
+    font-size: 28px;
+}
 .seccion_contacto{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 1000px;
-    width: 100%;
+    height: 1100px;
     background-image: url(/imagenesprovisionales/Sin\ título-16777_Mesa\ de\ trabajo\ 1.png);
     background-repeat: no-repeat;
     background-size: contain;
@@ -81,7 +134,7 @@ p{
 }
 
 .informacion_contacto{
-    margin-top: 80px;
+    margin-top: 40px;
     text-align: center;
 }
 
@@ -97,7 +150,7 @@ p{
 }
 
 .formulario_contacto{
-    margin-top: 140px;
+    /* margin-top: 140px; */
     display:flex;
     flex-direction: column;
 }
@@ -204,4 +257,218 @@ p{
     width: 22px;
     height: 16px;
     object-fit: cover;
+}
+
+
+.proyecto{
+    padding-top: 160px;
+    margin-left: 56px;
+    margin-right: 56px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: space-around;
+}
+
+.proyecto_informacion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 120px;
+}
+
+.proyecto_informacion h1{
+    margin: 0;
+    font-size: 40px;
+    color: black;
+}
+
+.proyecto_informacion h2,
+.imagenes_proyecto p,
+.titulo_sub_proyecto h3{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+}
+
+.imagenes_proyecto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 28px;
+
+}
+
+.info_usuario{
+    margin-top: 28px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(229, 229, 229);
+    border-radius: 10px;
+    padding: 4px;
+}
+
+.info_usuario p{
+    color: black;
+    font-size: 16px;
+    margin-bottom: 32px;
+    font-weight: 600;
+}
+.info_usuario span{
+    color: black;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.info_usuario label{
+    display: flex;
+    flex-direction: column;
+}
+
+.input_info{
+    height: 30px;
+    border: 1px solid grey;
+    border-radius: 12px;
+}
+
+.input_info::placeholder{
+    padding-left: 8px;
+    
+}
+
+.input_info:focus{
+    padding-left: 8px;
+}
+.proyecto_info_button{
+    margin-top: 20px;
+    background-color: var(--second-color);
+    color: white;
+    border-radius: 48px;
+    border-style: none; 
+    width: 100px;
+    height: 36px;
+    opacity: 0.9;
+}
+
+.proyecto_info_button:hover{
+    cursor: pointer;
+    box-shadow: 0 0 0 1px grey;
+}
+.imagen_principal{
+    margin: 0;
+    display: flex;
+    margin-left: 40px;
+}
+.imagen_principal img{
+    width: 450px;
+    height: 430px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.modal{
+    display: none;
+}
+
+.modal:target{
+    display: block;
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    z-index: 2000;
+}
+
+.imagen{
+    margin-top: 200px;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen a{
+    color: #fff;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.imagen a:nth-child(2){
+    margin: 0;
+    height: 100%;
+    flex-shrink: 2;
+}
+
+.cerrar{
+    display: block;
+    background: #fff;
+    width: 32px;
+    height: 32px;
+    margin: 15px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    padding: 2px;
+    opacity: 0.6;
+    border-radius: 50%;
+    line-height: 25px;
+}
+
+.imagen img{
+    height: 100%;
+    width: 500px;
+    max-width: 100%;
+    box-sizing: border-box;
+    border-radius: 32px;
+}
+
+.imagenes_columna{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagenes_columna img{
+    width: 350px;
+    height: 114px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.proyecto_botones{
+    width: 100%;
+    margin-top: 80px;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.proyecto_botones input{
+    margin-top: 20px;
+    background-color: var(--second-color);
+    color: white;
+    border-radius: 48px;
+    border-style: none; 
+    width: 148px;
+    height: 44px;
+    opacity: 0.9;
+}
+
+
+.proyecto_botones form{
+    margin: 10px 48px 0 36px ;
+}
+
+.proyecto_botones input:hover{
+    cursor: pointer;
+    box-shadow: 0 0 0 1px grey;
 }

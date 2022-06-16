@@ -25,23 +25,157 @@
 
     </header>
     <section id="seccion_contacto" class="seccion_contacto">
-       
-        <article >
-            <form class="formulario_contacto" action="https://formsubmit.co/inmovybog@gmail.com" method="POST">
-                <label for="name">
-                    <span>Nombre Completo*</span>
-                    <input type="text" id="name" placeholder="Ingresa tu nombre" name="name" autocomplete="name" required>
-                </label>
-                <label for="email">
-                    <span>Email*</span>
-                    <input type="email" id="email" placeholder="Ingresa tu email" name="email" autocomplete="email" required>
-                </label>
-                <input type="hidden" name="_next" value="http://127.0.0.1:5500/paginaweb_inmovy/index.html">
-                <input type="hidden" name="_captcha" value="false">
-                <input class="button_submit" type="submit" value="Enviar">
-            </form>
+    
+        <article class="article-contacto">
+            <div class="frase">
+                <hr class="line_1">
+                <h1>El live estuvo brutal , asi que si te lo perdiste solo tienes que<br/> dejar tus datos aqui para podértelo enviar</h1>
+                <h2> Unete a la presentación del proyecto en vivo próximamente.</h2>
+                <hr class="line_2">
+            </div>
+            <div class="container_form">
+                <figure class="imagen_article">
+                    <img src="./deco120/principal.jpeg" alt="Imagen fachada proyecto deco 120">
+                </figure>
+
+                <form class="formulario_contacto" action="https://formsubmit.co/inmovybog@gmail.com" method="POST">
+                    <p class="parrafo_form">Déjanos tu mejor correo y Recuerda estar<br/> atento al siguiente  
+                        live donde realizaremos<br/>la presentación de los proyectos,<br/> Deco 120 y Entorno 127</p>
+                    <label for="name">
+                        <span>Nombre Completo*</span>
+                        <input type="text" id="name" placeholder="Ingresa tu nombre" name="name" autocomplete="name" required>
+                    </label>
+                    <label for="email">
+                        <span>Email*</span>
+                        <input type="email" id="email" placeholder="Ingresa tu email" name="email" autocomplete="email" required>
+                    </label>
+                    <input type="hidden" name="_next" value="http://127.0.0.1:5500/paginaweb_inmovy/index.html">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input class="button_submit" type="submit" value="Enviar">
+                </form>
+                
+            </div>
+           
         </article>
     </section>
+    <main id="info_proyecto" class="proyecto">
+        <section class="proyecto_informacion">
+            <article class="proyecto_informacion_texto">
+
+                <article class="titulo_sub_proyecto">
+                    <h1>Deco 120</h1>
+                    <h2>Santa Barbara Bogotá, Colombia</h2>
+                    <h3>Desde: $544.772.632</h3>
+                </article>
+
+                <article class="imagenes_proyecto">
+                    <i class="fa-solid fa-table-cells"></i>
+                    <p>60 M2 </p>
+                    <i class="fa-solid fa-bed"></i>
+                    <p>1 a 2</p>
+                    <i class="fa-solid fa-toilet"></i>
+                    <p>2</p>  
+                </article>
+
+                <article class="info_usuario">
+
+                    <p>Unete a la presentación del proyecto <br/>en vivo el próximamente </p>
+                    <form action="">
+
+                        <label for="nombre_info">
+                            <span>Nombre</span>
+                            <input class="input_info" type="text" name="nombre_info" id="nombre_info" placeholder="Escribe tu nombre" autocomplete="name" required>
+                        </label>
+                        
+                        <label for="email_info">
+                            <span>Correo</span>
+                            <input class="input_info" type="email" name="email_info" id="email_info" placeholder="example@mail.com" autocomplete="email" required>
+                        </label>
+
+                        <input class="proyecto_info_button" type="submit" value="Enviar">
+                    </form>
+                    
+                </article>
+                
+            </article>
+            <figure class="imagen_principal">
+                <a href="#img1"><img src="./deco120/principal.jpeg" alt="Imagen de edificio"></a>
+            </figure>
+
+            <div class="modal" id="img1">
+                <div class="imagen">
+                    <a href="#img4">&#60;</a>
+                    <a href="#img2"><img src="./deco120/principal.jpeg" alt="Imagen de edificio"></a>
+                    <a href="#img2">></a>
+                </div>
+                <a class="cerrar" href="">x</a>
+            </div>
+            <section class="proyecto_informacion_imagenes">
+                
+                <article class="imagenes_columna">
+                    <figure>
+                        <a href="#img2"><img src="./deco120/WhatsApp Image 2022-05-16 at 2.49.00 PM (1).jpeg" alt="Imagen de columna"></a>
+                    </figure>
+                    <figure>
+                        <a href="#img3"><img src="./deco120/WhatsApp Image 2022-05-16 at 2.49.00 PM (2).jpeg" alt="Imagen de columna"></a>
+                    </figure>
+                    <figure>
+                        <a href="#img4"><img src="./deco120/WhatsApp Image 2022-05-16 at 2.49.00 PM (3).jpeg" alt="Imagen de columna"></a>
+                    </figure>
+                </article>
+
+                <div class="modal" id="img2">
+                    <div class="imagen">
+                        <a href="#img1">&#60;</a>
+                        <a href="#img3"><img src="./deco120/WhatsApp Image 2022-05-16 at 2.49.00 PM (1).jpeg" alt="Imagen de edificio"></a>
+                        <a href="#img3">></a>
+                    </div>
+                    <a class="cerrar" href="">x</a>
+                </div>
+                <div class="modal" id="img3">
+                    <div class="imagen">
+                        <a href="#img2">&#60;</a>
+                        <a href="#img4"><img src="./deco120/WhatsApp Image 2022-05-16 at 2.49.00 PM (2).jpeg" alt="Imagen de edificio"></a>
+                        <a href="#img4">></a>
+                    </div>
+                    <a class="cerrar" href="">x</a>
+                </div>
+                <div class="modal" id="img4">
+                    <div class="imagen">
+                        <a href="#img3">&#60;</a>
+                        <a href="#img1"><img src="./deco120/WhatsApp Image 2022-05-16 at 2.49.00 PM (3).jpeg" alt="Imagen de edificio"></a>
+                        <a href="#img1">></a>
+                    </div>
+                    <a class="cerrar" href="">x</a>
+                </div>
+            </section>
+
+        </section>
+
+        <section class="proyecto_botones">
+            <form action="/">
+                <input class="proyecto_descripcion button" type="submit" value="Descripción">
+            </form> 
+
+            <form action="/">
+                <input class="proyecto_descripcion button" type="submit" value="Apartamentos">
+            </form>   
+
+            <form action="/">
+                <input class="proyecto_descripcion button" type="submit" value="Pagos">
+            </form>   
+
+            <form action="/">
+                <input class="proyecto_descripcion button" type="submit" value="¿Por qué San Nicolas?">
+            </form>   
+
+            <form action="/">
+                <input class="proyecto_descripcion button" type="submit" value="Quiero Comprar">
+            </form>     
+
+        </section>
+    </main>
+
     <footer class="footer_section">
         <h1>Inmovy</h1>
         <section>

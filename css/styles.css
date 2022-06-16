@@ -71,7 +71,7 @@ p{
     flex-direction: row;
     width: 100%;
     height: 800px;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: #fbfbfb;
     padding-top: 100px;
@@ -81,6 +81,7 @@ p{
 }
 .titulo_inicio{
     font-size: 40px;
+    line-height: 40px;
 }
 .subtitulo{
     font-size: 14px;
@@ -104,8 +105,8 @@ p{
  .boton_venta{
     background-color: var(--second-color);
     color: white;
-    width: 180px;
-    height: 44px;
+    width: 262px;
+    height: 52px;
     border-radius: 48px;
     border-style: none; 
     margin-top: 36px;
@@ -275,12 +276,15 @@ p{
     text-decoration: none;
     position: absolute;
     top: 1456px;
-    left: 970px;
+    left: 966px;
     z-index: 1000;
+    font-size: 20px;
+    font-weight: 800;
 }
 
 
 .proyecto_boton{
+    
     color: #00ffa6;
     border-radius: 48px;
     border-style: none; 
@@ -290,6 +294,8 @@ p{
     position: absolute;
     top: 1456px;
     left: 494px;
+    font-size: 20px;
+    font-weight: 800;
 }
 
 .proyecto_boton:hover, .proyecto_boton_1:hover{
@@ -466,7 +472,7 @@ p{
     flex-direction: row;
     justify-content: space-around;
     height: 1000px;
-    background-image: url(/imagenesprovisionales/Sin\ título-16777_Mesa\ de\ trabajo\ 1.png);
+    background-image: url(/imagenesprovisionales/background.png);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;

@@ -1,0 +1,204 @@
+*{  
+    box-sizing: border-box;
+}
+:root{
+    --main-color: #496687; /* Titulos */
+    --second-color: #258563; /* Texto */
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+}
+body{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+p{
+    color: var(--main-color);
+    font-weight:bold ;
+}
+.contenedor{
+    display: flex;
+    flex-direction: line;
+    justify-content: space-between;
+    background-color: #fbfbfb;
+    width: 100%;
+    z-index: 1100;
+}
+
+.contenedor_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 114px;
+    margin-top: 28px;
+}
+
+.logo_img{
+    width: 50px;
+    height: 60px;
+}
+
+.barra_navegacion{
+    display: flex;
+    margin-top: 60px;
+    margin-right: 40px;
+
+}
+
+.barra_navegacion > li  {
+    list-style: none;
+    margin-right:20px;
+}
+.barra_navegacion > li a{
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: var(--sm);
+    font-weight: bold;
+} 
+.barra_navegacion > li a:hover{
+    color: black;
+    zoom: 105%;
+    cursor: pointer;
+}
+.main-section{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-section h1{
+    color: var(--second-color);
+    text-align: center;
+    font-size: 40px;
+}
+.main-section img{
+    width: 600px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+
+}
+.main-section h2{
+    font-weight: 400;
+    color: var(--main-color);
+    text-align: center;
+    font-size: 24px;
+    margin-top: 44px;
+    line-height: 1.5;
+}
+
+.main-section input{
+    margin-top: 20px;
+    font-size: 28px;
+    height: 60px;
+    width: 500px;
+    border-radius: 32px;
+    border: 1px solid var(--main-color);
+    color: white;
+    background-color: var(--second-color);
+}
+
+.main-section input:hover{
+    border-color: var(--main-color);
+    cursor: pointer;
+    opacity: 0.9;
+    transition: 0.5s;
+    zoom: 100.5%;
+}
+
+.information-text{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.information-text h1{
+    color: var(--second-color);
+    font-size: 40px;
+}
+
+.container-articles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+.container-articles div{
+    margin-top: 40px;
+    background-color: rgb(229, 247, 229);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    width: 400px;
+    position: relative;
+    border-radius: 20px;
+}
+.container-articles img{
+    width: 80px;
+    height: 80px;
+    position:absolute;
+    top: -40px;
+}
+
+.container-articles p{
+    text-align: center;
+    font-size: 20px;
+}
+
+.container_form{
+    margin-top: 20px;
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    align-items: space-around;
+}
+
+.footer_section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    align-items: center;
+}
+
+.footer_section h1{
+    font-size: 20px;
+    color: var(--main-color);
+}
+
+.footer_section p{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--main-color);
+}
+
+.footer_section section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.footer_section section a{
+    margin-right: 8px;
+}
+.logo_whatsapp img{
+    margin-left: 4px;
+    width: 21px;
+    height: 21px;
+    object-fit: cover;
+}
+
+.logo_correo img{
+    margin-left: 4px;
+    width: 22px;
+    height: 16px;
+    object-fit: cover;
+}
+
